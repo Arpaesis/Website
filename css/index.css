@@ -1,0 +1,101 @@
+body {
+	background-image: url(../res/bg-repeat.png);
+	background-repeat: repeat;
+}
+
+#nav {
+	float: right;
+}
+
+.fixed-top {
+	background-color: #4a4a4a;
+}
+
+.navbar-toggler-icon {
+	background-image: url(../res/menu.png);
+	width: 50px;
+	height: 50px;
+}
+
+#logo {
+	width: 150px;
+	height: 75px;
+	margin-left: 2%;
+}
+
+#logo-huge {
+	width: 100%;
+	height: 60%;
+	margin: 0 1%;
+}
+
+#logo-huge:hover {
+	cursor: pointer;
+}
+
+#display-container {
+	position: absolute;
+	width: 50%;
+	margin: 320px 25%;
+	height: 400px;
+}
+
+.buy {
+	color: black;
+	width: 80%;
+	margin: 0 10%;
+	margin-top: 2%;
+	font-size: 150%;
+	background-image: linear-gradient(to top right, yellow , darkorange);
+	font-family: impact;
+}
+
+.buy2 {
+	color: black;
+	width: 80%;
+	margin: 0 10%;
+	font-size: 150%;
+	background-image: linear-gradient(to top right, lightgreen , green);
+	font-family: impact;
+}
+
+#display {
+	background-image: url(../res/background.png);
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+
+#item {
+	height: 400px;
+	text-align: center;
+}
+
+.row {
+	text-align: center;
+	color: white;
+}
+
+.col {
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+}
+
+a{
+	display: block;
+	color: white;
+	text-decoration: none currentcolor solid;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none currentcolor solid;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
