@@ -1,14 +1,15 @@
 body {
+	height: 2000px;
 	background-image: url(../res/bg-repeat.png);
 	background-repeat: repeat;
 }
 
-#nav {
-	float: right;
-}
-
 .fixed-top {
 	background-color: #4a4a4a;
+}
+
+.navbar {
+	padding: 0;
 }
 
 .navbar-toggler-icon {
@@ -23,9 +24,13 @@ body {
 }
 
 #logo-huge {
-	width: 100%;
 	height: 60%;
-	margin: 0 1%;
+	width: 60vw;
+	text-align: center;
+	margin: 0 5vw;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 #logo-huge:hover {
@@ -34,27 +39,33 @@ body {
 
 #display-container {
 	position: absolute;
-	width: 50%;
-	margin: 320px 25%;
+	width: 70%;
+	margin: 320px 15%;
 	height: 400px;
 }
 
 .buy {
 	color: black;
-	width: 80%;
-	margin: 0 10%;
+	width: 30vw;
+	margin: 0 20vw;
 	margin-top: 2%;
 	font-size: 150%;
-	background-image: linear-gradient(to top right, yellow , darkorange);
+	background-color: gold;
+	border-top: 2px solid goldenrod;
+	border-left: 2px solid #ffd11a;
+	border-right: 2px solid chocolate;
 	font-family: impact;
 }
 
-.buy2 {
+.downloadbtn {
 	color: black;
-	width: 80%;
-	margin: 0 10%;
+	width: 20vw;
+	margin: 2% 25vw;
 	font-size: 150%;
-	background-image: linear-gradient(to top right, lightgreen , green);
+	background-color: #33cc33;
+	border-top: 2px solid #00b300;
+	border-left: 2px solid #00e600;
+	border-right: 2px solid green;
 	font-family: impact;
 }
 
@@ -65,9 +76,32 @@ body {
 	background-size:100% 100%;
 }
 
-#item {
-	height: 400px;
+.item {
+	display: flex;
+	flex-direction: column;
+	min-height: 70vh;
+	width: 70%;
+	margin: 0 15%;
 	text-align: center;
+	background-color: grey;
+	border-radius: 40px;
+}
+
+.item img {
+	width: 43vw;
+	height: 45%;
+	margin: 0 13vw;
+	min-width: 300px;
+	min-height: 150px;
+	float: right;
+}
+
+.item * {
+	margin-bottom: 2%;
+}
+
+.item h1 {
+	margin-top: 3%;
 }
 
 .row {
@@ -85,6 +119,10 @@ a{
 	color: white;
 	text-decoration: none currentcolor solid;
 	outline: none;
+}
+
+.logo {
+	margin-left: 1%;
 }
 
 a:hover {
